@@ -7,11 +7,15 @@ div.slide {
   background-color: white;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 div.slide div.header {
   width: 100%;
-  height: 0.8rem;
+  height: 7vh;
   top: 0rem;
   left: 0rem;
   background-color: #33aaff;
@@ -21,18 +25,55 @@ div.slide div.header {
 
 div.slide div.footer {
   width: 100%;
-  height: 0.8rem;
+  height: 7vh;
   bottom: 0rem;
   left: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   background-color: #ffaa33;
   position: absolute;
   z-index: 0;
 }
 
+div.slide div.footer div.source {
+  margin: 0rem 1rem 0rem 0rem;
+  font-size: 50%;
+  color: white;
+  text-align: right;
+}
+
+div.slide div.number {
+  top: calc(7vh - 0.5em);
+  left: 0.8rem;
+  font-family: "Gill Sans Nova";
+  font-size: 250%;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: -0.05em;
+  background: linear-gradient(to bottom, white 50%, #33aaff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  z-index: 1;
+}
+
+div.slide div.logo {
+  margin: 0rem 2.5rem 0rem 3rem;
+}
+
+div.slide div.logo img {
+  height: 8rem;
+}
+
 div.slide div.content {
-  width: 100%;
+  margin: 0rem 3rem 0rem 0rem;
+}
+
+div.slide div.content {
   height: 100%;
-  padding: 1rem 0rem;
+  padding: 10vh 0vh;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -40,8 +81,17 @@ div.slide div.content {
   display: flex;
 }
 
+div.slide div.content div.text {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+div.slide div.content div.text.sh:nth-child(1) span.sans {
+  font-family: "Vekos" !important;
+}
+
 html {
-  font-size: 7.2vh;
+  font-size: 4.5vh;
 }
 
 body {
