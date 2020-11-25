@@ -45,7 +45,8 @@ div.slide div.footer div.source {
 
 div.slide div.number {
   top: calc(7vh - 0.5em);
-  left: 0.8rem;
+  left: 0rem;
+  padding: 0rem 1rem;
   font-family: "Gill Sans Nova";
   font-size: 250%;
   font-weight: bold;
@@ -76,9 +77,10 @@ div.slide div.content {
   padding: 12vh 0vh;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: stretch;
   box-sizing: border-box;
   display: flex;
+  flex-grow: 1;
 }
 
 div.slide div.content div.text-wrapper {
